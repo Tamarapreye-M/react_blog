@@ -19,6 +19,7 @@ const Blogs = () => {
 							<h1>{item.title}</h1>
 							<p>{item.subTitle}</p>
 							<p>{item.dateTime}</p>
+							<img src={item.image} alt="/" />
 						</div>
 					);
 				})}
