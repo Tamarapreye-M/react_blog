@@ -30,7 +30,7 @@ const data = [
         tailored to your customer's buying journey. 
         The best content is given to the consumer just when they need it.`,
 		image:
-			"https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1016,h=432,fit=crop/navyhgblx/convertkit-unsplash-Yane7J3yK3uXZLVz.jpg",
+			"https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1016,h=432,fit=crop/navyhgblx/convertkit-unsplash-Yyvey0Q1yOceObyJ.jpg",
 	},
 	{
 		id: "3",
