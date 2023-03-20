@@ -18,6 +18,7 @@ const Blogs = () => {
 						<div key={item.id}>
 							<h1>{item.title}</h1>
 							<p>{item.subTitle}</p>
+							<p>{item.dateTime}</p>
 						</div>
 					);
 				})}
