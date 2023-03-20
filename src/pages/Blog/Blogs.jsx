@@ -12,7 +12,16 @@ const Blogs = () => {
 				<Link to="newpost">to new post</Link>
 				<p>{data[0].title}</p>
 			</div>
-			<div>{data.map((item) => {})}</div>
+			<div>
+				{data.map((item) => {
+					return (
+						<div key={item.id}>
+							<h1>{item.title}</h1>
+							<p>{item.subTitle}</p>
+						</div>
+					);
+				})}
+			</div>
 		</>
 	);
 };
