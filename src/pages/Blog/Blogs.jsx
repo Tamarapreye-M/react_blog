@@ -1,25 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useOutletContext } from "react-router-dom";
 
-import data from "./../../data/data";
+// import data from "./../../data/data";
 
 const Blogs = () => {
+	const [allPost] = useOutletContext();
 	return (
 		<>
-			<div>
-				<Link to="singlepost">to single post</Link>
-				<br />
-				<Link to="newpost">to new post</Link>
+			<div className="w-[300px] mx-auto mb-20">
+				<Link to="newpost" className=" bg-red-500 py-3 px-8 text-white ">
+					to new post
+				</Link>
 			</div>
-			<div>
-				{data.map((item) => {
+			<div className="w-3/4 mx-auto grid grid-cols-2 gap-10">
+				{allPost.map((item) => {
 					return (
-						<div key={item.id}>
-							<h1>{item.title}</h1>
-							<p>{item.subTitle}</p>
-							<p>{item.dateTime}</p>
-							<img src={item.image} alt="/" />
-						</div>
+						<Link to={item.id}>
+							<div key={item.id}>
+								<img src={item.image} alt="/" />
+								<h1 className="text-2xl font-semibold py-2">{item.title}</h1>
+								<p>{item.subTitle}</p>
+								<p className="flex gap-1 pt-2">
+									<span>{item.dateTime}</span>
+									<span>.</span>
+									<span>{item.duration}</span>
+								</p>
+							</div>
+						</Link>
 					);
 				})}
 			</div>
