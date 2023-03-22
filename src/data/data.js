@@ -1,5 +1,6 @@
 const data = [
 	{
+		id: "1",
 		title: "How I got into marketing and why I love it",
 		subTitle:
 			"I get asked too often than not why I'm a marketer, and there's a good reason for it.",
@@ -17,7 +18,7 @@ const data = [
 	},
 	{
 		id: "2",
-		title: "The 10 waysid: '1', you're ruining your content",
+		title: "The 10 ways you're ruining your content",
 		subTitle:
 			"Your content marketing strategy lives in a volatile environment.",
 		dateTime: "6/9/2021",
