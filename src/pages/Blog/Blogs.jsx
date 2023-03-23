@@ -4,7 +4,7 @@ import { Link, useOutletContext } from "react-router-dom";
 // import data from "./../../data/data";
 
 const Blogs = () => {
-	const [allPost] = useOutletContext();
+	const [allPost, newForm] = useOutletContext();
 	return (
 		<>
 			<div className="w-[300px] mx-auto mb-20">
