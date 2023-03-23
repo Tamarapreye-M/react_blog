@@ -13,13 +13,9 @@ const BlogLayout = () => {
 		dateTime: "",
 	});
 
-	const handleForm = (ev) => {};
-
-	const handleSubmit = (ev) => {};
-
 	return (
 		<div>
-			<Outlet context={[allPost, setAllPost, handleForm, handleSubmit]} />
+			<Outlet context={[allPost, setAllPost]} />
 		</div>
 	);
 };
