@@ -15,8 +15,8 @@ const Blogs = () => {
 			<div className="w-3/4 mx-auto grid grid-cols-2 gap-10">
 				{allPost.map((item) => {
 					return (
-						<Link to={item.id}>
-							<div key={item.id}>
+						<Link to={item.id} key={item.id}>
+							<div>
 								<img src={item.image} alt="/" />
 								<h1 className="text-2xl font-semibold py-2">{item.title}</h1>
 								<p>{item.subTitle}</p>
