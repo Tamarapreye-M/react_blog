@@ -4,19 +4,22 @@ import { Outlet } from "react-router-dom";
 
 const BlogLayout = () => {
 	const [allPost, setAllPost] = useState(data);
-	const handlePost = (ev, id) => {
-		ev.preventDefault();
-		let { name, value } = ev.target;
-		console.log(name, value);
+	const [newForm, setNewForm] = useState({
+		title: "",
+		subTitle: "",
+		body: "",
+		image: "",
+		duration: "",
+		dateTime: "",
+	});
 
-		// const newPost = { [name]: value, id: allPost.length + 1 };
+	const handleForm = (ev) => {};
 
-		// setAllPost((prev) => [...prev, newPost]);
-	};
+	const handleSubmit = (ev) => {};
 
 	return (
 		<div>
-			<Outlet context={[allPost, setAllPost, handlePost]} />
+			<Outlet context={[allPost, setAllPost, handleForm, handleSubmit]} />
 		</div>
 	);
 };
