@@ -2,8 +2,16 @@ import React from "react";
 import { useOutletContext } from "react-router-dom";
 
 const NewPost = () => {
-	const [allPost, handleForm, handleSubmit] = useOutletContext();
-	console.log(allPost);
+	const [allPost, newForm, setNewForm] = useOutletContext();
+	const handleForm = (ev) => {
+		let { value, name } = ev.target;
+		// setNewForm({ ...newForm, [name]: value });
+		// console.log(newForm);
+	};
+	console.log(newForm, allPost);
+
+	const handleSubmit = (ev) => {};
+
 	return (
 		<div>
 			<form action="" className="w-1/4 mx-auto" onSubmit={handleSubmit}>
@@ -13,7 +21,7 @@ const NewPost = () => {
 						className=" bg-orange-200 px-4 py-2 focus:outline-offset-1 focus:outline-orange-600"
 						type="text"
 						name="title"
-						onChange={handlePost}
+						onChange={handleForm}
 					/>
 				</div>
 				<div className="flex flex-col gap-2 w-full mb-4">
@@ -22,7 +30,7 @@ const NewPost = () => {
 						className=" bg-orange-200 px-4 py-2 focus:outline-offset-1 focus:outline-orange-600"
 						type="text"
 						name="subTitle"
-						onChange={handlePost}
+						onChange={handleForm}
 					/>
 				</div>
 				<div className="flex flex-col gap-2 w-full mb-4">
@@ -31,7 +39,7 @@ const NewPost = () => {
 						className=" bg-orange-200 px-4 py-2 focus:outline-offset-1 focus:outline-orange-600"
 						type="text"
 						name="duration"
-						onChange={handlePost}
+						onChange={handleForm}
 					/>
 				</div>
 				<div className="flex flex-col gap-2 w-full mb-4">
@@ -40,7 +48,7 @@ const NewPost = () => {
 						className=" bg-orange-200 px-4 py-2 focus:outline-offset-1 focus:outline-orange-600"
 						type="text"
 						name="dateTime"
-						onChange={handlePost}
+						onChange={handleForm}
 					/>
 				</div>
 				<div className="flex flex-col gap-2 w-full mb-4">
@@ -49,7 +57,7 @@ const NewPost = () => {
 						className=" bg-orange-200 px-4 py-2 focus:outline-offset-1 focus:outline-orange-600"
 						type="text"
 						name="body"
-						onChange={handlePost}
+						onChange={handleForm}
 					/>
 				</div>
 				<div>
@@ -62,7 +70,7 @@ const NewPost = () => {
 						className=" bg-orange-200 px-4 py-2 focus:outline-offset-1 focus:outline-orange-600 w-full"
 						type="text"
 						name="image"
-						onChange={handlePost}
+						onChange={handleForm}
 					/>
 				</div>
 				<div className="mt-5">
