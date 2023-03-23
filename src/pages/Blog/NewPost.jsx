@@ -2,11 +2,11 @@ import React from "react";
 import { useOutletContext } from "react-router-dom";
 
 const NewPost = () => {
-	const [allPost, handlePost] = useOutletContext();
+	const [allPost, handleForm, handleSubmit] = useOutletContext();
 	console.log(allPost);
 	return (
 		<div>
-			<form action="" className="w-1/4 mx-auto">
+			<form action="" className="w-1/4 mx-auto" onSubmit={handleSubmit}>
 				<div className="flex flex-col gap-2 w-full mb-4">
 					<label htmlFor="title">Enter Title</label>
 					<input
