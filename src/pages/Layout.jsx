@@ -5,11 +5,11 @@ import Navbar from "../components/Navbar";
 
 const Layout = () => {
 	return (
-		<>
+		<div className="w-full">
 			<Navbar />
 			<Outlet context={{ hello: world }} />
 			<Footer />
-		</>
+		</div>
 	);
 };
 
