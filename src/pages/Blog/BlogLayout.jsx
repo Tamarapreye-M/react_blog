@@ -15,7 +15,7 @@ const BlogLayout = () => {
 
 	return (
 		<div>
-			<Outlet context={[allPost, setAllPost]} className='w-full' />
+			<Outlet context={[allPost, setAllPost]} className="w-full max-w-full" />
 		</div>
 	);
 };
