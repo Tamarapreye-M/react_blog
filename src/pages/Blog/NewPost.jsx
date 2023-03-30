@@ -15,7 +15,7 @@ const NewPost = () => {
 	return (
 		<div>
 			<form action="" className="w-1/4 mx-auto" onSubmit={handleSubmit}>
-				<div className="flex flex-col gap-2 w-full mb-4 max-w-full">
+				<div className="flex flex-col gap-2 w-full mb-4 ">
 					<label htmlFor="title">Enter Title</label>
 					<input
 						className=" bg-orange-200 px-4 py-2 focus:outline-offset-1 focus:outline-orange-600"
