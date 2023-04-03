@@ -7,7 +7,7 @@ const Blogs = () => {
 	const [allPost, newForm] = useOutletContext();
 	return (
 		<>
-			<div className="w-[300px] mx-auto mb-20 ">
+			<div className="w-[300px] mx-auto mb-20">
 				<Link to="newpost" className=" bg-red-500 py-3 px-8 text-white ">
 					to new post
 				</Link>
