@@ -16,7 +16,7 @@ const Blogs = () => {
 				{allPost.map((item) => {
 					return (
 						<Link to={item.id} key={item.id}>
-							<div className="text-sm md:text-base bg-slate-50">
+							<div className="text-sm md:text-base bg-slate-50 sm:text-sm">
 								<img src={item.image} alt="/" />
 								<h1 className="text-2xl font-semibold py-2">{item.title}</h1>
 								<p>{item.subTitle}</p>
